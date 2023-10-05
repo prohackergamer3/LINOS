@@ -14,22 +14,8 @@ int main() {
        strcat(pname,cmd);
        system(pname);
     }
-    if(strcmp(inp,"opensettings") == 0) {
-     system("am start -a android.settings.SETTINGS");
-    }
-    if(strcmp(inp,"openyt") == 0) {
-     system("am start -n com.google.android.youtube/com.google.android.youtube.HomeActivity");
-    }
-    if(strcmp(inp,"openapps") == 0) {
-     system("am start -a android.intent.action.VIEW -d https://play.google.com/store/apps");
-    }
-    if(strcmp(inp,"installpromuslim") == 0) {
-     system("am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.bitsmedia.android.muslimpro");
-
-
-   }
    if(strcmp(inp,"help") == 0) {
-    printf("opensettings:opens settings\nopenapps:opens app manager(play store)\ninstallpromuslim:installs pro muslim app\nopenyt:opens youtube\nusepack:Allows you to use a package\ninstallgithubproject:Downloads a github project\nrunpyfile:Runs a python file\n");
+    printf("usepack:Allows you to use a package\ninstallgithubproject:Downloads a github project\nrunpyfile:Runs a python file\n");
    }
     if(strcmp(inp,"usepack")  == 0) {
     char pname[100];
